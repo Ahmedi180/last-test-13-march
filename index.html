@@ -28,8 +28,8 @@
     const app = firebase.initializeApp(firebaseConfig);
     const database = firebase.database(app);
 
-    // Initialize Analytics
-    const analytics = firebase.getAnalytics(app);  // This line was corrected
+    // Initialize Analytics (correct method for Firebase 9.x.x)
+    const analytics = getAnalytics(app);  // Correct initialization method
   </script>
 
 </head>
