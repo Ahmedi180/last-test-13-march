@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bucket Shop Checker</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="page-shell">
+
+<aside class="sidebar">
+
+<div class="brand">
+<span class="cube">🧊</span> Shipment Tools
+</div>
+
+<nav class="nav">
+
+<a href="dashboard.html"><span class="nav-icon">▦</span>Dashboard</a>
+
+<a href="hs-code.html"><span class="nav-icon">🧾</span>HS Code</a>
+
+<a href="ntn-missing.html"><span class="nav-icon">👤</span>NTN Missing</a>
+
+<a class="active" href="bucket-shop.html"><span class="nav-icon">🏪</span>Bucket Shop</a>
+
+<a href="duplicate.html"><span class="nav-icon">📄</span>Duplicate</a>
+
+<a href="ntn-search.html"><span class="nav-icon">🔎</span>NTN Search</a>
+
+<a href="auto-ntn-update.html"><span class="nav-icon">🔄</span>Auto NTN Update</a>
+
+<a href="#" onclick="return logoutNow()"><span class="nav-icon">↪</span>Log Out</a>
+
+</nav>
+
+</aside>
+
+
+<main class="content">
+
+<div class="topbar">
+<h1>Bucket Shop Checker</h1>
+<button class="logout" onclick="logoutNow()">Log Out</button>
+</div>
+
+
+<div class="main-wrap">
+
+<h2 class="panel-title">Bucket Shop Checker</h2>
+
+
+<!-- Upload Card -->
+
+<div class="hero-card">
+
+<div class="hero-icon">🏪</div>
+
+<div class="hero-text">
+Upload Excel file to filter Sialkot bucket shop shipments.
+</div>
+
+
+<!-- Modern Upload Button -->
+
+<label class="upload-btn">
+
+📂 Upload Excel File
+
+<input id="bucketFile" type="file" accept=".xlsx,.xls,.csv" hidden>
+
+</label>
+
+
+<div id="bucketFileName" class="file-name">
+No file selected
+</div>
+
+
+<div class="form-row">
+
+<button id="bucketProcessBtn" class="primary-btn small">
+Process File
+</button>
+
+<button id="bucketExportBtn" class="primary-btn small">
+Export to Excel
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Summary -->
+
+<div class="summary-strip">
+
+<div class="summary-box">
+
+Filtered Rows
+
+<strong id="bucketTotal">0</strong>
+
+</div>
+
+</div>
+
+
+<!-- Table -->
+
+<div class="table-card">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Tracking Number</th>
+<th>Shipper Company</th>
+<th>Description</th>
+<th>City</th>
+
+</tr>
+
+</thead>
+
+<tbody id="bucketBody">
+
+<tr>
+<td colspan="4">No rows yet</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="footer-credit">
+
+A Project Created By <span>Imran Ahmed</span>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

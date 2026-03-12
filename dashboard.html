@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipment Verification Dashboard</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+
+<div class="page-shell">
+
+<aside class="sidebar">
+
+<div class="brand">
+<span class="cube">🧊</span> Shipment Tools
+</div>
+
+<nav class="nav">
+
+<a class="active" href="dashboard.html">
+<span class="nav-icon">▦</span>Dashboard
+</a>
+
+<a href="hs-code.html">
+<span class="nav-icon">🧾</span>HS Code
+</a>
+
+<a href="ntn-missing.html">
+<span class="nav-icon">👤</span>NTN Missing
+</a>
+
+<a href="bucket-shop.html">
+<span class="nav-icon">🏪</span>Bucket Shop
+</a>
+
+<a href="duplicate.html">
+<span class="nav-icon">📄</span>Duplicate
+</a>
+
+<a href="ntn-search.html">
+<span class="nav-icon">🔎</span>NTN Search
+</a>
+
+<a href="auto-ntn-update.html">
+<span class="nav-icon">🔄</span>Auto NTN Update
+</a>
+
+<a href="#" onclick="return logoutNow()">
+<span class="nav-icon">↪</span>Log Out
+</a>
+
+</nav>
+
+</aside>
+
+<main class="content">
+
+<div class="topbar">
+<h1>Shipment Verification Dashboard</h1>
+<button class="logout" onclick="logoutNow()">Log Out</button>
+</div>
+
+<div class="main-wrap">
+
+<section class="cards">
+
+<a class="tool-card" href="hs-code.html">
+<img src="icons/hs-code.svg" class="tool-icon">
+<h3>HS Code Verification</h3>
+<p>Verify HS Codes in your shipment data</p>
+</a>
+
+<a class="tool-card" href="ntn-missing.html">
+<img src="icons/ntn-missing.svg" class="tool-icon">
+<h3>NTN Missing Finder</h3>
+<p>Find shipments that are missing NTNs</p>
+</a>
+
+<a class="tool-card" href="bucket-shop.html">
+<img src="icons/bucket-shop.svg" class="tool-icon">
+<h3>Bucket Shop Checker</h3>
+<p>Identify bucket shops in your shipments</p>
+</a>
+
+<a class="tool-card" href="duplicate.html">
+<img src="icons/duplicate.svg" class="tool-icon">
+<h3>Duplicate Shipment Finder</h3>
+<p>Detect duplicate tracking numbers in shipments</p>
+</a>
+
+<a class="tool-card" href="ntn-search.html">
+<img src="icons/ntn-search.svg" class="tool-icon">
+<h3>NTN Search Tool</h3>
+<p>Quick search for NTN of a company</p>
+</a>
+
+<a class="tool-card" href="auto-ntn-update.html">
+<img src="icons/auto-ntn.svg" class="tool-icon">
+<h3>Auto NTN Update</h3>
+<p>Automatically update missing NTNs for shipments</p>
+</a>
+
+</section>
+
+<div class="footer-credit">
+A Project Created By <span>Imran Ahmed</span>
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

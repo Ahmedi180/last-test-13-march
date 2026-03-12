@@ -1,0 +1,8 @@
+Sync and backup folders have been added.
+
+Added folders:
+- backup/
+- sync/cloudflare/
+
+Current website behavior has not been changed.
+These folders are scaffolding for future Cloudflare deployment.
